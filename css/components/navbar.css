@@ -7,6 +7,7 @@
     background-color: var(--white);
 }
 
+
 .navbar .navbar__content{
     padding: 3rem 4rem 1rem;
     display: flex;
@@ -15,6 +16,8 @@
 
 .navbar .navbar__content .navbar__links li{
     display: inline-block;
+    margin-right: 30px;
+    margin-top: 25px;
 }
 
 .navbar .navbar__content .navbar__links li:not(:last-of-type){
@@ -49,9 +52,10 @@
     align-items: center;
 }
 
-.navbar .navbar__content .navbar__mobile img{
+.navbar .navbar__content .navbar__mobile .burguer{
     width: 3.6rem;
     height: 3.6rem;
+    font-size: 35px;
     cursor: pointer;
 }
 

@@ -1,0 +1,105 @@
+input[type="checkbox"]{
+    display: none;
+}
+
+html, body{
+    transition: 0.3s;
+}
+
+.dark, .dark header, .dark nav{
+    background-color: #263238;
+    color: #fff;
+}
+
+.dark footer, .dark .skills{
+    background-color: #38454b;
+    color: #fff;
+}
+
+.dark header h1, .dark .about h2, .dark .about h3{
+    color: #a8a8c4;
+}
+
+.dark .skills h2, .dark .skills h3{
+    color: #a8a8c4;
+}
+
+.dark .projects h2, .dark .projects h3{
+    color: #a8a8c4;
+}
+
+.dark footer h2{
+    color: #9898a3;
+}
+
+.bi-moon{
+    display: none;
+}
+
+.bi-sun{
+    cursor: pointer;
+}
+
+.dark .bi-moon{
+    display: contents;
+    cursor: pointer;
+}
+
+.dark .bi-sun{
+    display: none;
+}
+
+@media only screen and (max-width: 768px){
+    .dark .navbar .navbar__content .navbar__mobile.active .mobile__links{
+        background-color: #263238;
+    }
+
+    .navbar .navbar__mobile ul label .bi-sun{
+     display: flex;
+     flex-direction: column;  
+     width: 100%;
+     position: relative;
+     z-index: 1;
+     align-items: center;
+     margin-top: 12px;
+     margin-bottom: 15px;
+     cursor: pointer;
+    }
+
+    .navbar .navbar__mobile ul label .bi-moon{
+        display: none;
+        flex-direction: column;  
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        align-items: center;
+        margin-top: 12px;
+        margin-bottom: 15px;
+        cursor: pointer;
+       }
+
+    .dark .navbar .navbar__mobile ul label .bi-moon{
+        display: flex;
+        flex-direction: column;  
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        align-items: center;
+        margin-top: 12px;
+        margin-bottom: 15px;
+        cursor: pointer;
+       }
+   
+    .dark .navbar .navbar__mobile ul label .bi-sun{
+           display: none;
+           flex-direction: column;  
+           width: 100%;
+           position: relative;
+           z-index: 1;
+           align-items: center;
+           margin-top: 12px;
+           margin-bottom: 15px;
+           cursor: pointer;
+          }
+
+}

@@ -49,6 +49,21 @@ html, body{
     display: none;
 }
 
+.dark .cookies-msg{
+    background-color: #4f565a;
+}
+
+.dark .cookies-msg .cookies-btn .acept{
+    background-color: rgb(176, 176, 176);
+    color: #000000;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
 @media only screen and (max-width: 768px){
     .dark .navbar .navbar__content .navbar__mobile.active .mobile__links{
         background-color: #263238;

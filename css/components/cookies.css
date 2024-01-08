@@ -38,3 +38,21 @@
 .cookies-msg .cookies-btn .acept:hover{
     transform: scale(0.9);
 }
+
+@media only screen and (max-width: 768px){
+    .cookies-msg{
+        display: flex;
+        height: 60%;
+    }
+
+    .cookies-msg .cookies-txt{
+    display: inline-block;
+    align-items: center;
+    text-align: justify;
+    }
+
+    .cookies-msg .cookies-btn .acept{
+        margin-left: 50px;
+    }
+}
+

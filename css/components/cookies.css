@@ -39,10 +39,12 @@
     transform: scale(0.9);
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 425px){
     .cookies-msg{
         display: flex;
-        height: 60%;
+        height: 40%;
+        align-items: center;
+        display: none;
     }
 
     .cookies-msg .cookies-txt{
@@ -52,7 +54,11 @@
     }
 
     .cookies-msg .cookies-btn .acept{
-        margin-left: 50px;
+        margin-left: 18%;
+    }
+
+    .cookies-msg.mostrar{
+        display: block;
     }
 }
 

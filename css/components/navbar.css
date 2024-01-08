@@ -14,6 +14,13 @@
     justify-content: space-between;
 }
 
+.navbar .navbar__content h1{
+    align-items: center;
+    margin-top: 10px;
+    color: #fff;
+    float: right;
+}
+
 .navbar .navbar__content .navbar__links li{
     display: inline-block;
     margin-right: 30px;
@@ -81,4 +88,10 @@
    display: block;
    text-align: center;
 }
+}
+
+@media only screen and (max-width: 425px){
+    .navbar .navbar__content h1{
+        display: none;
+    }
 }

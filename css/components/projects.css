@@ -44,6 +44,26 @@
     text-decoration: underline;
 }
 
+.projects button{
+    background-color: #65697c;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 180px;
+    height: 40px;
+    margin-top: 50px;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.projects button:hover{
+    transform: scale(0.9);
+}
+
+
 @media only screen and (max-width: 768px){
     .projects ul li,
     .projects ul li.projects__reversed-list{

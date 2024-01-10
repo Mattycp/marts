@@ -1,16 +1,37 @@
 @import url('./reset.min.css');
 @import url('./style.css');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 .principal{
-    width: 60%;
+    width: 70%;
     margin: 2rem auto;
 }
 
+.topo-galeria{
+    height: 80px;
+}
+
+.topo-galeria i{
+    position: relative;
+    font-size: 35px;
+    color: #fff;
+    display: flex;
+    font-weight: bolder;
+    margin-left: 88%;
+    padding: 0;
+    bottom: 55px;
+}
+
+.topo-galeria a{
+    text-decoration: none;
+}
+
+
 .galeria{
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
-    gap: 0.5rem;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(30, 4vw);
+    gap: 0.65rem;
 }
 
 .imgGaleria{
@@ -22,47 +43,185 @@
 
 .itemGaleria{
     overflow: hidden;
+    border: 4px solid #fff;
+    box-shadow: 3px 3px 5px #0006;
+    flex-grow: 1;
+    transition: transform 0.2s linear;
 }
+
+.itemGaleria:hover{
+    transform: scale(1.1); 
+}
+
 
 
 .item01{ /* Logo Marts */
-    grid-column: 1 / span 3;
-    grid-row: 5 / span 3;
-    border: 3px solid;
+    grid-column: 8 / span 2;
+    grid-row: 1 / span 3;
 }
 
 .item02{ /* Logo Paulino Corretores */
-    grid-column: 6 / span 3;
-    grid-row: 1 / span 4;
-    border: 3px solid;
+    grid-column: 5 / span 3;
+    grid-row: 1 / span 5;
 }
 
 .item03{ /* Logo Paulino Advocacia */
-    grid-column: 4 / span 2;
-    grid-row: 5 / span 2;
-    border: 3px solid;
+    grid-column: 8 / span 2;
+    grid-row: 4 / span 2;
 }
 
 .item04{ /* Cartão Paulino Corretores */
-    grid-column: 1 / span 5;
+    grid-column: 1 / span 4;
     grid-row: 1 / span 4;
-    border: 3px solid;
 }
 
-.item05{
-    grid-column: 4 / span 2;
-    grid-row: 7 / span 2;
-    border: 3px solid;
+.item05{ /* Cartão verde */
+    grid-column: 1 / span 4;
+    grid-row: 5 / span 3;
 }
 
 .item06{ /* Cartão Bruna Bolos */
-    grid-column: 6 / span 3;
-    grid-row: 5 / span 5;
-    border: 3px solid;
+    grid-column: 5 / span 2;
+    grid-row: 12 / span 6;
 }
 
-.item07{
-    grid-column: 1 / span 3;
-    grid-row: 8 / span 3;
-    border: 3px solid;
+.item07{ /* Cartão Claudia */
+    grid-column: 1 / span 2;
+    grid-row: 8 / span 7;
+}
+
+.item08{ /* Cartão Marcio */
+    grid-column: 5 / span 2;
+    grid-row: 6 / span 6;
+}
+
+.item09{ /* Cartão Meu Kanto */
+    grid-column: 3 / span 2;
+    grid-row: 8 / span 5;
+}
+
+.item10{ /* Cartão de natal */
+    grid-column: 7 / span 3;
+    grid-row: 6 / span 5;
+}
+
+.item11{ /* Folder Vivas Fit */
+    grid-column: 7 / span 3;
+    grid-row: 11 / span 7;
+}
+
+.item12{ /* Placa de aluga */
+    grid-column: 3 / span 2;
+    grid-row: 15 / span 2;
+}
+
+.item13{ /* Placa de vende */
+    grid-column: 3 /span 2;
+    grid-row: 13 / span 2;
+}
+
+.detail{
+    display: none;
+}
+
+.galeria .itemGaleria:target{
+    position: fixed;
+    width: 50%;
+    top: 150px;
+    left: 25%;
+    padding: 10px;
+    border: solid 1px #333;
+    box-shadow: 0 0 25px 10px #000;
+    background: #ffffff;
+    border-radius: 10px;
+    transform: none;
+    transition: none;
+    z-index: 1;
+}
+
+.galeria .item02:target, .galeria .item01:target{
+    position: fixed;
+    width: 35%;
+    top: 150px;
+    left: 35%;
+    padding: 10px;
+    border: solid 1px #333;
+    box-shadow: 0 0 25px 10px #000;
+    background: #ffffff;
+    border-radius: 10px;
+    transform: none;
+    transition: none;
+    z-index: 1;
+}
+
+.itemGaleria:target .detail{
+    padding: 15px;
+    border: solid 2px;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    margin-top: 10px;
+}
+
+.galeria .itemGaleria:target img{
+    cursor: default;
+}
+
+.galeria .item08:target, .galeria .item07:target, .galeria .item09:target, .galeria .item06:target{
+    position: fixed;
+    width: 25%;
+    top: 20px;
+    left: 40%;
+    padding: 10px;
+    border: solid 1px #333;
+    box-shadow: 0 0 25px 10px #000;
+    background: #ffffff;
+    border-radius: 10px;
+    transform: none;
+    transition: none;
+    z-index: 1;   
+}
+
+.galeria .item11:target{
+    position: fixed;
+    width: 30%;
+    top: 50px;
+    left: 40%;
+    padding: 10px;
+    border: solid 1px #333;
+    box-shadow: 0 0 25px 10px #000;
+    background: #ffffff;
+    border-radius: 10px;
+    transform: none;
+    transition: none;
+    z-index: 1;  
+}
+
+.galeria .item10:target{
+    position: fixed;
+    width: 45%;
+    top: 45px;
+    left: 30%;
+    padding: 10px;
+    border: solid 1px #333;
+    box-shadow: 0 0 25px 10px #000;
+    background: #ffffff;
+    border-radius: 10px;
+    transform: none;
+    transition: none;
+    z-index: 1;  
+}
+
+.galeria .itemGaleria .detail a{
+    text-decoration: none;
+    background-color: #000;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #fff;
+    position: relative;
+    top: 8px;
+}
+
+.galeria .itemGaleria .detail a:hover{
+    color: red;
 }

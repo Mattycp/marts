@@ -64,6 +64,10 @@ html, body{
     transition: 0.2s;
 }
 
+.dark .projects ul .image{
+    border: none;
+}
+
 @media only screen and (max-width: 768px){
     .dark .navbar .navbar__content .navbar__mobile.active .mobile__links{
         background-color: #263238;

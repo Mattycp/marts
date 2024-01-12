@@ -276,3 +276,26 @@
 .galeria .itemGaleria .detail a:hover{
     color: red;
 }
+
+.aviso-mobile h1{
+    display: none;
+}
+
+@media only screen and (max-width: 425px){   
+    html, body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    header, main, footer{
+        display: none;
+    }
+    
+    .aviso-mobile h1{
+        position: relative;
+        display: flex;
+        text-align: center;
+        margin-top: 100px;
+        font-size: 30px;
+    }
+}
